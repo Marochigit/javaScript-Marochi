@@ -1,4 +1,4 @@
-alert("Calcule los promedios de su aula")
+alert("Calcule las faltas de los estudiantes")
 const usuarioHabilitado = "profesor"
 const contraseniaHabilitada = "contraseña"
 
@@ -8,23 +8,23 @@ let contrasenia = prompt("Ingrese su contraseña")
 if(usuario === usuarioHabilitado && contrasenia === contraseniaHabilitada){
     alert ("Bienvenido " + usuario)
 
-    let cantidadAlumnos = parseInt(prompt("Ingrese la cantidad de estudiantes a los que quiera calcular el promedio"))
+    let cantidadAlumnos = parseInt(prompt("Ingrese la cantidad de estudiantes que quiera saber sus faltas"))
 
     for(let i = 0 ; i < cantidadAlumnos ; i++){
 
         let nombreEstudiante = prompt("Ingrese el nombre del alumno");
-        let nota1 = parseInt(prompt("Ingrese la primera nota"));
-        let nota2 = parseInt(prompt("Ingrese la segunda nota"));
-        let nota3 = parseInt(prompt("Ingrese la tercera nota"));
-        let promedio = calcularPromedio(nota1, nota2, nota3);
-        alert("El promedio de " + nombreEstudiante + " es " + promedio);
+        let falta1 = parseInt(prompt("Ingrese las faltas del primer trimestre"));
+        let falta2 = parseInt(prompt("Ingrese las faltas del segundo trimestre"));
+        let falta3 = parseInt(prompt("Ingrese las faltas del tercer trimestre"));
+        let faltas = calcularFaltas(falta1, falta2, falta3);
+        alert("Las falatas de " + nombreEstudiante + " son " + faltas);
 
-        let aprueba = apruebaAnio(promedio)
+        let total = totalFaltas(faltas)
 
-        if(aprueba){
-            alert (nombreEstudiante + " aprueba el año");
+        if(total){
+            alert (nombreEstudiante + " es regular");
         } else{
-            alert (nombreEstudiante + " no aprueba el año")
+            alert (nombreEstudiante + " quedo libre")
         }
     }
 } else{
@@ -35,13 +35,13 @@ if(usuario === usuarioHabilitado && contrasenia === contraseniaHabilitada){
 //Funciones 
 
 
-function calcularPromedio(nota1, nota2, nota3){
-    let promedio = (nota1 + nota2 + nota3)/ 3;
-    return promedio;
+function calcularFaltas(falta1, falta2, falta3){
+    let faltas = (falta1 + falta2 + falta3);
+    return faltas;
 }
 
-function apruebaAnio(promedio){
-    if(promedio >= 6){
+function totalFaltas(faltas){
+    if(faltas <= 15){
         return true;
     } else {
         return false;
