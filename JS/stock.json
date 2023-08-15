@@ -1,0 +1,14 @@
+[
+    {"id": 1, "nombre": "Hamburguesa simple", "tipo": "hamburguesa", "desc": "Un medallon de carne con cheddar mas toppings a eleccion", "precio": 1200,"img": "./img/simple.PNG"},
+    {"id": 2, "nombre": "Hamburguesa doble", "tipo": "hamburguesa", "desc": "dos medallones de carne con cheddar mas toppings a eleccion", "precio": 1450,"img": "./img/Captura.PNG"},
+    {"id": 3, "nombre": "Hamburguesa triple", "tipo": "hamburguesa", "desc": "tres medallones de carne con cheddar mas toppings a eleccion", "precio": 1600,"img": "./img/triple.PNG"},
+    {"id": 4, "nombre": "Hamburguesa cuadruple", "tipo": "hamburguesa", "desc": "cuatro medallones de carne con cheddar mas toppings a eleccion", "precio": 1800, "img": "./img/cuadruple.png"},
+    {"id": 5, "nombre": "Lomo Simple", "tipo": "simple", "desc": "Lomo, lechuga,tomate y mayonesa", "precio": 1500,"img": "./img/lomo-simple.PNG"},
+    {"id": 6, "nombre": "Lomo Completo", "tipo": "completo", "desc": "Lomo, lechuga,tomate, mayonesa, jamon y huevo", "precio": 1700,"img": "./img/lomo-completo.jpg"},
+    {"id": 7, "nombre": "Lomo Especial", "tipo": "especial", "desc": "Lomo cheddar y bacon", "precio": 2000,"img": "./img/lomo-especial.jpg"},
+    {"id": 8, "nombre": "Lomito Veggie", "tipo": "veggie", "desc": "lomo de lentejas con queso a elleccion y mayonesa", "precio": 2000,"img": "./img/lomo-veggie.png"},
+    {"id": 9, "nombre": "Coca Cola 500cc", "tipo": "bebidas", "desc": "Coca cola chica", "precio": 300,"img": "./img/coca-500.jpg"},
+    {"id": 10, "nombre": "Coca Cola 1,5L", "tipo": "bebidas", "desc": "Coca Cola grande", "precio": 700,"img": "./img/coca1,5.jpg"},
+    {"id": 11, "nombre": "Cerveza Imperial 473cc", "tipo": "bebidas", "desc": "Lata de birra imperial", "precio": 500,"img": "./img/imperial.jpeg"},
+    {"id": 12, "nombre": "Cerveza Stella Artois 473cc", "tipo": "bebidas", "desc": "Lata de birra Stella", "precio": 550,"img": "./img/stella.jpeg"}
+]
